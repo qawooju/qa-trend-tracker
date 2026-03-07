@@ -137,11 +137,15 @@ def slack_post(blocks, thread_ts=None):
 def lines_to_blocks(lines):
     blocks = []
     chunk = []
+    chunk_len = 0
     for line in lines:
-        chunk.append(line)
-        if len(chunk) >= 8:
+        # Slack section 블록 텍스트 제한 2900자 (여유분 확보)
+        if chunk and chunk_len + len(line) + 1 > 2900:
             blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": "\n".join(chunk)}})
             chunk = []
+            chunk_len = 0
+        chunk.append(line)
+        chunk_len += len(line) + 1
     if chunk:
         blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": "\n".join(chunk)}})
     return blocks
