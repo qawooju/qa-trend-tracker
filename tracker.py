@@ -139,8 +139,8 @@ def lines_to_blocks(lines):
     chunk = []
     chunk_len = 0
     for line in lines:
-        # Slack section 블록 텍스트 제한 2900자 (여유분 확보)
-        if chunk and chunk_len + len(line) + 1 > 2900:
+        # Slack 더보기 방지: 블록당 텍스트 800자 이하로 분할
+        if chunk and chunk_len + len(line) + 1 > 800:
             blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": "\n".join(chunk)}})
             chunk = []
             chunk_len = 0
@@ -290,11 +290,11 @@ def build_article_thread(title, articles, seen_urls):
         lines.append("새로운 아티클 없음")
         return lines_to_blocks(lines), []
 
-    for i, a in enumerate(new_articles[:15], 1):
+    for i, a in enumerate(new_articles[:10], 1):
         source = a.get("source", "")
         lines.append(f"{i}. <{a['url']}|{a['title']}> ({source})")
 
-    return lines_to_blocks(lines), [a["url"] for a in new_articles[:15]]
+    return lines_to_blocks(lines), [a["url"] for a in new_articles[:10]]
 
 
 # ── 메인 ─────────────────────────────────────────────────────────────────
