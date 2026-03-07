@@ -162,7 +162,7 @@ AI_QA_SOURCES = [
     ("Dev.to #aitesting", "https://dev.to/feed/tag/aitesting"),
 ]
 
-# 한국 테크 블로그 (QA/AI 키워드로 필터링)
+# 국내 테크 블로그 (QA/AI 키워드로 필터링)
 KR_TECH_BLOGS = [
     ("토스 기술블로그", "https://toss.tech/rss.xml"),
     ("카카오 기술블로그", "https://tech.kakao.com/feed/"),
@@ -221,7 +221,7 @@ def collect_ai_qa_articles():
 
 
 def collect_kr_tech_articles():
-    """한국 테크 블로그에서 QA/AI 관련 아티클 필터링"""
+    """국내 테크 블로그에서 QA/AI 관련 아티클 필터링"""
     qa_articles = []
     ai_articles = []
 
@@ -260,7 +260,7 @@ def build_header():
             "text": {
                 "type": "mrkdwn",
                 "text": (
-                    "QA/테스트 관련 최신 아티클과 AI 활용 사례를 정리합니다.\n"
+                    "QA/테스트 관련 최신 아티클과 AI 활용 사례를 매일 정리합니다.\n"
                     "상세 내역은 스레드를 확인해주세요."
                 ),
             },
@@ -310,7 +310,7 @@ def main():
     print("\n[AI + QA 소스]")
     ai_qa_articles = collect_ai_qa_articles()
 
-    print("\n[한국 테크 블로그]")
+    print("\n[국내 테크 블로그]")
     kr_qa_articles, kr_ai_articles = collect_kr_tech_articles()
 
     print(f"\n수집 결과: QA {len(qa_articles)}건, AI+QA {len(ai_qa_articles)}건, "
@@ -330,17 +330,17 @@ def main():
 
     all_new_urls = []
 
-    # 2) 한국 테크 블로그 QA 아티클
+    # 2) 국내 테크 블로그 QA 아티클
     blocks, new_urls = build_article_thread(
-        "[한국 테크 블로그 — QA/테스트]", kr_qa_articles, seen_urls
+        "[국내 테크 블로그 — QA/테스트]", kr_qa_articles, seen_urls
     )
     slack_post(blocks, thread_ts=ts)
     all_new_urls.extend(new_urls)
     print(f"  스레드: 한국 QA ({len(new_urls)}건)")
 
-    # 3) 한국 테크 블로그 AI 아티클
+    # 3) 국내 테크 블로그 AI 아티클
     blocks, new_urls = build_article_thread(
-        "[한국 테크 블로그 — AI 활용]", kr_ai_articles, seen_urls
+        "[국내 테크 블로그 — AI 활용]", kr_ai_articles, seen_urls
     )
     slack_post([{"type": "divider"}] + blocks, thread_ts=ts)
     all_new_urls.extend(new_urls)
