@@ -256,7 +256,7 @@ def collect_kr_tech_articles():
 def build_header():
     _w = ["월", "화", "수", "목", "금", "토", "일"]
     _t = datetime.now(KST)
-    _d = f"{_t.strftime('%m-%d')}({_w[_t.weekday()]})"
+    _d = f"{_t.strftime('%m-%d')} ({_w[_t.weekday()]})"
     blocks = [
         {"type": "header", "text": {"type": "plain_text", "text": f"QA 트렌드 & AI in QA 리포트 | {_d}"}},
         {"type": "divider"},
