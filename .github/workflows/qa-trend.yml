@@ -2,8 +2,8 @@ name: QA Trend Tracker
 
 on:
   schedule:
-    # 매일 오전 9시 KST (= 0시 UTC)
-    - cron: '0 0 * * *'
+    # 매일 오전 10:00 KST (= 1:00 UTC)
+    - cron: '0 1 * * *'
   workflow_dispatch:
 
 permissions:
