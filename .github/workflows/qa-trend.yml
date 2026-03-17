@@ -2,8 +2,8 @@ name: QA Trend Tracker
 
 on:
   schedule:
-    # 매일 오전 10:00 KST 목표 (5h 딜레이 보정)
-    - cron: '0 20 * * *'
+    # 매일 오전 10:00 KST 목표 (2h 딜레이 보정)
+    - cron: '0 23 * * *'
   workflow_dispatch:
 
 permissions:
