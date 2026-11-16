@@ -8,6 +8,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
 
@@ -70,6 +71,22 @@ def fetch_rss(url, timeout=15):
         return ""
 
 
+def item_date(block):
+    """RSS pubDate / Atom published·updated → aware datetime. 못 읽으면 None"""
+    m = re.search(r"<(pubDate|published|updated|dc:date)[^>]*>(.*?)</\1>", block, re.DOTALL)
+    if not m:
+        return None
+    raw = m.group(2).strip()
+    try:
+        d = parsedate_to_datetime(raw)
+    except (TypeError, ValueError, IndexError):
+        try:
+            d = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+    return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+
+
 def parse_rss_items(rss_text, max_items=20):
     """RSS/Atom 피드에서 항목 파싱"""
     articles = []
@@ -86,7 +103,7 @@ def parse_rss_items(rss_text, max_items=20):
         title = unescape(re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", title_m.group(1))).strip()
         url = unescape(link_m.group(1)).strip()
         if title and len(title) >= 5:
-            articles.append({"title": title, "url": url})
+            articles.append({"title": title, "url": url, "published": item_date(item)})
 
     # Atom <entry> 파싱
     if not articles:
@@ -99,7 +116,7 @@ def parse_rss_items(rss_text, max_items=20):
             title = unescape(re.sub(r"<!\[CDATA\[(.*?)\]\]>", r"\1", title_m.group(1))).strip()
             url = unescape(link_m.group(1)).strip()
             if title and len(title) >= 5:
-                articles.append({"title": title, "url": url})
+                articles.append({"title": title, "url": url, "published": item_date(entry)})
 
     return articles
 
@@ -197,6 +214,30 @@ KR_TECH_BLOGS = [
 ]
 
 
+# 해외 빅테크 기술블로그 (키워드 필터 없이 최근 글 — 글로벌 회사 트렌드용)
+GLOBAL_TECH_BLOGS = [
+    ("Netflix", "https://netflixtechblog.com/feed"),
+    ("Disney Streaming", "https://medium.com/feed/disney-streaming"),
+    ("Airbnb", "https://medium.com/feed/airbnb-engineering"),
+    ("Meta", "https://engineering.fb.com/feed/"),
+    ("Spotify", "https://engineering.atspotify.com/feed"),
+    ("Slack", "https://slack.engineering/feed/"),
+    ("GitHub", "https://github.blog/engineering/feed/"),
+    ("Pinterest", "https://medium.com/feed/pinterest-engineering"),
+    ("Dropbox", "https://dropbox.tech/feed"),
+    ("Shopify", "https://shopify.engineering/blog.atom"),
+    ("Cloudflare", "https://blog.cloudflare.com/rss/"),
+    ("Expedia", "https://medium.com/feed/expedia-group-tech"),
+    ("Walmart", "https://medium.com/feed/walmartglobaltech"),
+    ("Google Research", "https://research.google/blog/rss/"),
+    ("AWS Machine Learning", "https://aws.amazon.com/blogs/machine-learning/feed/"),
+    ("OpenAI", "https://openai.com/news/rss.xml"),
+    ("Martin Fowler", "https://martinfowler.com/feed.atom"),
+]
+GLOBAL_MAX_AGE_DAYS = 3   # 처음 켤 때 옛 글이 쏟아지지 않게 — 발행일 없는 글은 건너뜀
+GLOBAL_PER_FEED = 3
+
+
 # ── 수집 함수 ─────────────────────────────────────────────────────────────
 def collect_qa_articles():
     """QA/Testing 전문 소스에서 아티클 수집"""
@@ -270,6 +311,26 @@ def collect_kr_tech_articles():
     return qa_articles, ai_articles
 
 
+def collect_global_tech_articles(now=None):
+    """해외 빅테크 기술블로그 최근 글 — 피드별 최신 GLOBAL_PER_FEED 건"""
+    now = now or datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=GLOBAL_MAX_AGE_DAYS)
+    articles = []
+    for name, url in GLOBAL_TECH_BLOGS:
+        rss = fetch_rss(url)
+        if not rss:
+            continue
+        items = parse_rss_items(rss, max_items=30)
+        fresh = sorted((it for it in items if it.get("published") and it["published"] >= cutoff),
+                       key=lambda it: it["published"], reverse=True)[:GLOBAL_PER_FEED]
+        for item in fresh:
+            item["source"] = name
+        articles.extend(fresh)
+        print(f"  {name}: {len(items)}건 중 최근 {len(fresh)}건")
+    articles.sort(key=lambda it: it["published"], reverse=True)
+    return articles
+
+
 # ── 메시지 빌드 ───────────────────────────────────────────────────────────
 def build_header():
     _w = ["월", "화", "수", "목", "금", "토", "일"]
@@ -283,7 +344,7 @@ def build_header():
             "text": {
                 "type": "mrkdwn",
                 "text": (
-                    "QA/테스트 관련 최신 아티클과 AI 활용 사례를 매일 정리합니다.\n"
+                    "QA/테스트 관련 최신 아티클과 AI 활용 사례, 해외 빅테크 기술블로그 새 글을 매일 정리합니다.\n"
                     "상세 내역은 스레드를 확인해주세요."
                 ),
             },
@@ -292,7 +353,7 @@ def build_header():
     return blocks
 
 
-def build_article_thread(title, articles, seen):
+def build_article_thread(title, articles, seen, limit=10):
     """아티클 목록을 스레드 블록으로 변환. seen(정규화 URL 집합)에 있으면 제외하고, 보낸 것은 seen 에 바로 추가해
     같은 실행의 다른 섹션에도 다시 나오지 않게 한다"""
     new_articles = []
@@ -308,7 +369,7 @@ def build_article_thread(title, articles, seen):
         lines.append("새로운 아티클 없음")
         return lines_to_blocks(lines), []
 
-    sent = new_articles[:10]
+    sent = new_articles[:limit]
     for i, a in enumerate(sent, 1):
         source = a.get("source", "")
         lines.append(f"{i}. <{a['url']}|{a['title']}> ({source})")
@@ -336,6 +397,9 @@ def main():
 
     print("\n[국내 테크 블로그]")
     kr_qa_articles, kr_ai_articles = collect_kr_tech_articles()
+
+    print("\n[해외 빅테크 기술블로그]")
+    global_articles = collect_global_tech_articles()
 
     print(f"\n수집 결과: QA {len(qa_articles)}건, AI+QA {len(ai_qa_articles)}건, "
           f"한국 QA {len(kr_qa_articles)}건, 한국 AI {len(kr_ai_articles)}건")
@@ -374,6 +438,14 @@ def main():
     slack_post([{"type": "divider"}] + blocks, thread_ts=ts)
     all_new_urls.extend(new_urls)
     print(f"  스레드: 한국 AI ({len(new_urls)}건)")
+
+    # 3-1) 해외 빅테크 기술블로그
+    blocks, new_urls = build_article_thread(
+        "[해외 빅테크 기술블로그]", global_articles, seen_urls, limit=15
+    )
+    slack_post([{"type": "divider"}] + blocks, thread_ts=ts)
+    all_new_urls.extend(new_urls)
+    print(f"  스레드: 해외 빅테크 ({len(new_urls)}건)")
 
     # 4) 글로벌 QA/Testing 아티클
     blocks, new_urls = build_article_thread(
