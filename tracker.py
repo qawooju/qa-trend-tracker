@@ -5,6 +5,7 @@ import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone, timedelta
 from html import unescape
@@ -21,6 +22,8 @@ KST = timezone(timedelta(hours=9))
 
 # 보낸 URL 을 기억하는 기간 (피드에 오래 남는 글도 다시 안 보내도록 넉넉히)
 SENT_KEEP_DAYS = 365
+
+TRACKING_PARAMS = {"fbclid", "gclid", "ref", "source", "feature", "si"}  # utm_* 는 접두어로 따로 거름
 
 # ── QA 키워드 (제목 필터링용) ────────────────────────────────────────────
 QA_KEYWORDS = [
@@ -102,10 +105,15 @@ def parse_rss_items(rss_text, max_items=20):
 
 
 def norm_url(url):
-    """중복 판정용 URL 키 — 스킴·www·쿼리·프래그먼트·끝 슬래시 차이를 무시"""
-    u = re.sub(r"^https?://(www\.)?", "", url.strip())
-    u = re.sub(r"[?#].*$", "", u)
-    return u.rstrip("/").lower()
+    """중복 판정용 URL 키 — 스킴·www·끝 슬래시·추적 파라미터 차이를 무시 (watch?v= 같은 식별 파라미터는 유지)"""
+    parts = urllib.parse.urlsplit(url.strip())
+    host = re.sub(r"^www\\.", "", parts.netloc.lower())
+    query = sorted(
+        (k, v) for k, v in urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+        if not (k.lower().startswith("utm_") or k.lower() in TRACKING_PARAMS)
+    )
+    q = urllib.parse.urlencode(query)
+    return f"{host}{parts.path.rstrip('/')}" + (f"?{q}" if q else "")
 
 
 def matches_keywords(title, keywords):
