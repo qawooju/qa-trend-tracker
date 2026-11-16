@@ -19,6 +19,9 @@ SLACK_CHANNEL = os.environ.get("SLACK_CHANNEL", "C0AJZJLSXMH")
 
 KST = timezone(timedelta(hours=9))
 
+# 보낸 URL 을 기억하는 기간 (피드에 오래 남는 글도 다시 안 보내도록 넉넉히)
+SENT_KEEP_DAYS = 365
+
 # ── QA 키워드 (제목 필터링용) ────────────────────────────────────────────
 QA_KEYWORDS = [
     "qa", "qe", "test", "testing", "quality", "automation",
@@ -96,6 +99,13 @@ def parse_rss_items(rss_text, max_items=20):
                 articles.append({"title": title, "url": url})
 
     return articles
+
+
+def norm_url(url):
+    """중복 판정용 URL 키 — 스킴·www·쿼리·프래그먼트·끝 슬래시 차이를 무시"""
+    u = re.sub(r"^https?://(www\.)?", "", url.strip())
+    u = re.sub(r"[?#].*$", "", u)
+    return u.rstrip("/").lower()
 
 
 def matches_keywords(title, keywords):
@@ -274,16 +284,15 @@ def build_header():
     return blocks
 
 
-def build_article_thread(title, articles, seen_urls):
-    """아티클 목록을 스레드 블록으로 변환 (중복 제거)"""
-    new_articles = [a for a in articles if a["url"] not in seen_urls]
-
-    # URL 중복 제거
-    unique = {}
-    for a in new_articles:
-        if a["url"] not in unique:
-            unique[a["url"]] = a
-    new_articles = list(unique.values())
+def build_article_thread(title, articles, seen):
+    """아티클 목록을 스레드 블록으로 변환. seen(정규화 URL 집합)에 있으면 제외하고, 보낸 것은 seen 에 바로 추가해
+    같은 실행의 다른 섹션에도 다시 나오지 않게 한다"""
+    new_articles = []
+    for a in articles:
+        key = norm_url(a["url"])
+        if key in seen or any(norm_url(n["url"]) == key for n in new_articles):
+            continue
+        new_articles.append(a)
 
     lines = [f"*{title}*\n"]
 
@@ -291,11 +300,13 @@ def build_article_thread(title, articles, seen_urls):
         lines.append("새로운 아티클 없음")
         return lines_to_blocks(lines), []
 
-    for i, a in enumerate(new_articles[:10], 1):
+    sent = new_articles[:10]
+    for i, a in enumerate(sent, 1):
         source = a.get("source", "")
         lines.append(f"{i}. <{a['url']}|{a['title']}> ({source})")
+    seen.update(norm_url(a["url"]) for a in sent)
 
-    return lines_to_blocks(lines), [a["url"] for a in new_articles[:10]]
+    return lines_to_blocks(lines), [norm_url(a["url"]) for a in sent]
 
 
 # ── 메인 ─────────────────────────────────────────────────────────────────
@@ -323,7 +334,12 @@ def main():
 
     # 이전 상태 로드
     prev_state = load_state()
-    seen_urls = set(prev_state.get("seen_urls", []))
+    # 보낸 URL 원장 {정규화 URL: 처음 보낸 날짜}. 예전 형식(seen_urls 리스트)은 오늘 날짜로 흡수
+    today = now_kst.strftime("%Y-%m-%d")
+    sent_log = dict(prev_state.get("sent", {}))
+    for u in prev_state.get("seen_urls", []):
+        sent_log.setdefault(norm_url(u), today)
+    seen_urls = set(sent_log)
 
     # 1) 메인 메시지
     header_blocks = build_header()
@@ -367,12 +383,14 @@ def main():
     all_new_urls.extend(new_urls)
     print(f"  스레드: AI+QA ({len(new_urls)}건)")
 
-    # 상태 저장
-    all_seen = list(seen_urls | set(all_new_urls))
-    # 최근 200개만 유지
+    # 상태 저장 — 날짜 기준으로 오래된 것부터 정리 (예전엔 set 을 잘라 최근 보낸 것도 무작위로 빠져 재발송됐음)
+    for u in all_new_urls:
+        sent_log.setdefault(u, today)
+    cutoff = (now_kst - timedelta(days=SENT_KEEP_DAYS)).strftime("%Y-%m-%d")
+    sent_log = {u: d for u, d in sent_log.items() if d >= cutoff}
     new_state = {
         "updated": now_kst.isoformat(),
-        "seen_urls": all_seen[-200:],
+        "sent": dict(sorted(sent_log.items(), key=lambda kv: kv[1])),
     }
     save_state(new_state)
     print("\n상태 저장 완료")
