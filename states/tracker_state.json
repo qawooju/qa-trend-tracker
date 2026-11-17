@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T11:29:33.252512+09:00",
+  "updated": "2026-11-17T13:53:52.855938+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3630,6 +3630,27 @@
     "dev.to/sumytbe/validate-image-uploads-before-you-allocate-a-preview-1n1g": "2026-11-16",
     "dev.to/silviutech/playwright-email-fixtures-need-better-failure-evidence-5bp6": "2026-11-16",
     "dev.to/irfantayyab/holding-a-portfolio-to-its-resume-3pnm": "2026-11-16",
-    "dev.to/laconicleon/a-figma-to-penpot-import-kept-all-10-objects-what-else-needed-checking-3p67": "2026-11-16"
+    "dev.to/laconicleon/a-figma-to-penpot-import-kept-all-10-objects-what-else-needed-checking-3p67": "2026-11-16",
+    "aws.amazon.com/blogs/machine-learning/build-memory-aware-ai-agents-with-agentic-retrieve-on-amazon-bedrock-managed-knowledge-base": "2026-11-17",
+    "aws.amazon.com/blogs/machine-learning/how-duco-transforms-financial-data-automation-with-amazon-bedrock-agentcore": "2026-11-17",
+    "aws.amazon.com/blogs/machine-learning/taxonomy-of-multi-agent-design-patterns-anti-patterns-and-lessons-from-manufacturing": "2026-11-17",
+    "openai.com/index/expanding-chatgpt-for-academic-researchers": "2026-11-17",
+    "openai.com/index/strengthening-online-child-safety": "2026-11-17",
+    "medium.com/pinterest-engineering/rebuilding-guardian-how-pinterest-upgraded-its-real-time-abuse-platform-to-modern-infrastructure-56e45ee8f471": "2026-11-17",
+    "openai.com/index/science-at-the-frontier": "2026-11-17",
+    "dev.to/prascli/a-ci-warning-that-goes-quiet-when-the-shard-is-split-49l1": "2026-11-17",
+    "dev.to/alapha888/youtubes-transcript-panel-changed-its-dom-the-new-selectors-that-actually-work-4a2n": "2026-11-17",
+    "dev.to/outworktech/automating-restore-validation-test-the-backup-before-you-need-it-69a": "2026-11-17",
+    "dev.to/jackm-singularity/ai-coding-agent-preview-environments-test-real-changes-without-touching-production-3j58": "2026-11-17",
+    "dev.to/saarathi_academy/a-qa-engineer-in-nepal-writes-more-bug-reports-than-code-jk": "2026-11-17",
+    "dev.to/faheen_ahamed_5702a254152/ai-coding-scores-hit-80-then-the-tests-failed-their-own-audit-twice-n61": "2026-11-17",
+    "dev.to/kevcam2407/i-gave-11-ai-assistants-the-same-10-poisoned-documents-gemini-announced-a-fake-bank-transfer-as-d1c": "2026-11-17",
+    "dev.to/x360ai/managed-playwright-testing-is-the-future-of-testing-and-x360-ai-does-it-today-17ic": "2026-11-17",
+    "dev.to/sophiax99/oauth-test-data-needs-a-credential-boundary-3c6p": "2026-11-17",
+    "dev.to/stagingbench/preserve-unknown-when-reading-image-benchmark-json-4bfo": "2026-11-17",
+    "dev.to/nikolay_chernev_a67479931/measuring-answer-faithfulness-in-rag-metrics-that-hold-up-lgg": "2026-11-17",
+    "medium.com/@armishshah0/how-to-write-a-test-case-using-ai-845d80e43294": "2026-11-17",
+    "caiquecoelho.medium.com/we-let-ai-pick-our-cypress-tests-four-months-later-heres-what-happened-e2f4d79d8c88": "2026-11-17",
+    "zhiminzhan.medium.com/it-executives-likely-staffing-strategies-in-the-age-of-ai-coding-stage-3-upgrade-senior-and-dc5c84a52102": "2026-11-17"
   }
 }
