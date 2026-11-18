@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T13:53:52.855938+09:00",
+  "updated": "2026-11-18T12:58:12.638201+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3651,6 +3651,35 @@
     "dev.to/nikolay_chernev_a67479931/measuring-answer-faithfulness-in-rag-metrics-that-hold-up-lgg": "2026-11-17",
     "medium.com/@armishshah0/how-to-write-a-test-case-using-ai-845d80e43294": "2026-11-17",
     "caiquecoelho.medium.com/we-let-ai-pick-our-cypress-tests-four-months-later-heres-what-happened-e2f4d79d8c88": "2026-11-17",
-    "zhiminzhan.medium.com/it-executives-likely-staffing-strategies-in-the-age-of-ai-coding-stage-3-upgrade-senior-and-dc5c84a52102": "2026-11-17"
+    "zhiminzhan.medium.com/it-executives-likely-staffing-strategies-in-the-age-of-ai-coding-stage-3-upgrade-senior-and-dc5c84a52102": "2026-11-17",
+    "toss.tech/article/targeting-model-automation": "2026-11-18",
+    "tech.kakao.com/posts/848": "2026-11-18",
+    "aws.amazon.com/blogs/machine-learning/managed-nvidia-dynamo-on-amazon-sagemaker-hyperpod-inference": "2026-11-18",
+    "aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads": "2026-11-18",
+    "aws.amazon.com/blogs/machine-learning/cut-generative-ai-costs-code-for-rules-models-for-judgment": "2026-11-18",
+    "blog.cloudflare.com/quad9-withdrawal-from-france": "2026-11-18",
+    "github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices": "2026-11-18",
+    "medium.com/airbnb-engineering/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training-32f3ff8ff7d0": "2026-11-18",
+    "openai.com/index/introducing-gpt-6-2-astra-sol": "2026-11-18",
+    "netflixtechblog.com/engineering-ai-discover-e244944cdc38": "2026-11-18",
+    "martinfowler.com/articles/deterministic-simulation-testing.html": "2026-11-18",
+    "openai.com/index/introducing-chatgpt-for-sales": "2026-11-18",
+    "openai.com/index/strengthening-nato-allied-cyber-defences-ai": "2026-11-18",
+    "dev.to/jackm-singularity/ai-coding-agent-test-fixtures-keep-the-oracle-outside-the-agents-reach-j7i": "2026-11-18",
+    "dev.to/naslx/test-mobile-navigation-with-a-keyboard-before-shipping-a-menu-53n0": "2026-11-18",
+    "dev.to/raylabs/idempotency-unit-test-id-swaps-with-divergent-fixtures-1e10": "2026-11-18",
+    "dev.to/tihmlo_90/a-deadline-register-should-reject-ambiguous-dates-before-sorting-3nga": "2026-11-18",
+    "dev.to/denis_lacombe_2d8953a90dc/i-got-tired-of-llms-returning-almost-json-so-i-built-a-strict-prompt-generator-234a": "2026-11-18",
+    "dev.to/aleax_h_9843add3eb7d8575e/your-fee-model-has-a-flat-component-and-your-tests-do-not-1a2d": "2026-11-18",
+    "dev.to/silviutech/playwright-email-tests-need-a-failure-taxonomy-14cl": "2026-11-18",
+    "dev.to/jamieparker2001/your-fetch-was-aborted-the-server-still-committed-the-work-5h63": "2026-11-18",
+    "dev.to/jamieparker2001/your-fetch-was-aborted-the-server-still-committed-the-work-2jjc": "2026-11-18",
+    "dev.to/beth-ai/i-test-bitcoin-and-lightning-apps-like-a-new-user-one-paid-qa-pass-2000-sats-evidence-included-44n2": "2026-11-18",
+    "dev.to/tarunsinghofficial/best-ai-testing-tools-for-startups-without-a-qa-team-in-2027-1g3m": "2026-11-18",
+    "medium.com/@vimal.surani/how-to-test-ai-generated-code-in-2026-12-real-world-scenarios-every-qa-engineer-must-know-94b9bb366cf6": "2026-11-18",
+    "blog.welovebug.com/boost-w-ai-%E0%B8%9B%E0%B8%B1%E0%B9%8A%E0%B8%A1%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%B0%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%94%E0%B8%AD%E0%B8%81-%E0%B9%81%E0%B8%95%E0%B9%88%E0%B9%83%E0%B8%84%E0%B8%A3%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%82%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B9-software-tester-%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD-test-source-0221a18981ce": "2026-11-18",
+    "devenkoai.medium.com/stop-chatting-start-automating-10-ready-to-use-grok-ai-agent-prompts-df7cac37bb71": "2026-11-18",
+    "skakarh.medium.com/agentic-test-creation-vs-ai-test-generation-7-best-secrets-487b7115b996": "2026-11-18",
+    "medium.com/@paQArti/automation-testing-biar-robot-yang-ngerjain-tes-berulang-kamu-fokus-mikir-fdc87c9396a1": "2026-11-18"
   }
 }
