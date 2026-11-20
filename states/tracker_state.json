@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T12:54:58.584727+09:00",
+  "updated": "2026-11-20T12:47:36.239438+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3710,6 +3710,32 @@
     "medium.com/codex/i-tested-playwrights-ai-healer-agent-on-92-broken-tests-c3ec9c419c2c": "2026-11-19",
     "medium.com/@testowlai1/the-future-of-software-testing-how-ai-test-automation-is-transforming-quality-assurance-bba5ee6f837e": "2026-11-19",
     "medium.com/@remyalovenature/how-i-fixed-flaky-ui-tests-with-claude-code-without-burning-tokens-67132c462c23": "2026-11-19",
-    "bismabhundi.medium.com/from-noisy-ci-logs-to-actionable-insights-failure-focused-reporting-in-playwright-301a51e10aa6": "2026-11-19"
+    "bismabhundi.medium.com/from-noisy-ci-logs-to-actionable-insights-failure-focused-reporting-in-playwright-301a51e10aa6": "2026-11-19",
+    "techblog.lycorp.co.jp/ko/external-guardrails-for-ai-security": "2026-11-20",
+    "blog.cloudflare.com/nginx2root": "2026-11-20",
+    "aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2": "2026-11-20",
+    "aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock": "2026-11-20",
+    "aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments": "2026-11-20",
+    "research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer": "2026-11-20",
+    "blog.cloudflare.com/internet-traffic-2026-us-election": "2026-11-20",
+    "engineering.atspotify.com/2026/11/when-can-you-ship-on-offline-evals-alone": "2026-11-20",
+    "openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast": "2026-11-20",
+    "openai.com/business/learn/deploying-daybreak-red": "2026-11-20",
+    "openai.com/business/learn/pr-scans-demo": "2026-11-20",
+    "dev.to/juanpabloabadiamedin/a-small-acceptance-test-for-human-approval-boundaries-3gj3": "2026-11-20",
+    "dev.to/softalpha_0/my-tests-were-green-they-caught-0-of-10-real-bugs-g9h": "2026-11-20",
+    "dev.to/gtelocalize/shipping-software-in-japanese-scripts-input-methods-and-the-bugs-they-cause-4g1i": "2026-11-20",
+    "dev.to/dreyhq/none-of-our-production-checks-waited-for-a-real-model-reply-pja": "2026-11-20",
+    "dev.to/ryanlee91/replay-safe-email-webhooks-in-nodejs-5cc4": "2026-11-20",
+    "dev.to/kaybarax/how-a-24-minute-ci-check-became-a-10-second-local-check-l3i": "2026-11-20",
+    "dev.to/derek-compdf/pdf-invoice-extraction-keep-real-zeros-and-review-missing-fields-288d": "2026-11-20",
+    "dev.to/tanahiro2010/are-ai-written-tests-really-tests-49": "2026-11-20",
+    "dev.to/sweety717/i-put-my-ai-code-reviewer-through-100-real-world-testing-scenarios-heres-what-ive-learned-so-far-5a0a": "2026-11-20",
+    "dev.to/plainworkstudio/the-7-gate-production-launch-checklist-for-solo-developers-4emm": "2026-11-20",
+    "medium.com/wingarc/%E6%B6%88%E3%81%88%E3%81%9F%E3%81%AE%E3%81%AF-%E4%BD%9C%E6%A5%AD-%E3%81%A7-%E5%88%A4%E6%96%AD%E3%81%A8%E8%B2%AC%E4%BB%BB-%E3%81%AF%E6%B6%88%E3%81%88%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84-ai%E3%81%A7%E5%93%81%E8%B3%AA%E4%BF%9D%E8%A8%BC%E3%82%92%E5%9B%9E%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1-d6194602daf0": "2026-11-20",
+    "zhiminzhan.medium.com/why-is-todays-ai-test-automation-fundamentally-flawed-2684914d0e0a": "2026-11-20",
+    "medium.com/@parinita1.kapoor/best-mabl-alternatives-in-2027-8-ai-testing-tools-to-consider-624e513174cf": "2026-11-20",
+    "medium.com/@michael-brown-/how-to-evaluate-an-ai-testing-tool-beyond-the-demo-94dd56649126": "2026-11-20",
+    "medium.com/@jonas.menesklou/on-premise-ai-test-automation-what-has-to-stay-inside-your-network-and-how-to-check-it-e92b2b3c3a99": "2026-11-20"
   }
 }
