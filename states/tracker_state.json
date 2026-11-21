@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T12:47:36.239438+09:00",
+  "updated": "2026-11-21T12:38:39.731725+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3736,6 +3736,33 @@
     "zhiminzhan.medium.com/why-is-todays-ai-test-automation-fundamentally-flawed-2684914d0e0a": "2026-11-20",
     "medium.com/@parinita1.kapoor/best-mabl-alternatives-in-2027-8-ai-testing-tools-to-consider-624e513174cf": "2026-11-20",
     "medium.com/@michael-brown-/how-to-evaluate-an-ai-testing-tool-beyond-the-demo-94dd56649126": "2026-11-20",
-    "medium.com/@jonas.menesklou/on-premise-ai-test-automation-what-has-to-stay-inside-your-network-and-how-to-check-it-e92b2b3c3a99": "2026-11-20"
+    "medium.com/@jonas.menesklou/on-premise-ai-test-automation-what-has-to-stay-inside-your-network-and-how-to-check-it-e92b2b3c3a99": "2026-11-20",
+    "aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together": "2026-11-21",
+    "aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill": "2026-11-21",
+    "research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini": "2026-11-21",
+    "aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm": "2026-11-21",
+    "blog.cloudflare.com/ruby2shell-waf-protection": "2026-11-21",
+    "blog.cloudflare.com/phpaftershell-waf-protection": "2026-11-21",
+    "martinfowler.com/fragments/2026-11-20.html": "2026-11-21",
+    "openai.com/index/combatting-adversarial-distillation": "2026-11-21",
+    "openai.com/business/customer-stories/hebbia": "2026-11-21",
+    "openai.com/index/introducing-medchembench": "2026-11-21",
+    "dev.to/jinfeng_li_597239b9d96bed/running-playwright-behind-residential-proxies-7-things-that-actually-break-19ff": "2026-11-21",
+    "dev.to/lamine_yamal/a-safer-workflow-for-testing-mods-without-breaking-a-stable-setup-4p7e": "2026-11-21",
+    "dev.to/buluo/deepseek-v41-flash-vs-deepseek-v4-pro-for-coding-why-the-first-patch-matters-ge4": "2026-11-21",
+    "dev.to/revhive/we-ran-the-control-a-reader-asked-for-it-also-turned-out-we-had-benchmarked-the-wrong-model-13bb": "2026-11-21",
+    "dev.to/itsevilduck/python-android-preferences-mock-simulate-sharedpreferences-in-python-4d1": "2026-11-21",
+    "dev.to/bitheirstake/audit-trails-for-disposable-email-test-data-78f": "2026-11-21",
+    "dev.to/nghiep_phamquoc_568df0fe/build-log-1-how-the-lab-to-prod-pipeline-runs-43aj": "2026-11-21",
+    "dev.to/ruslanty/i-built-a-screenshot-diff-tool-and-found-a-nasty-canvas-bug-123j": "2026-11-21",
+    "dev.to/veritaschain/fixed-in-the-update-is-a-claim-not-evidence-notes-on-waymos-freeway-recalls-and-an-ai-citation-24o4": "2026-11-21",
+    "dev.to/mattleeee/replay-testing-a-live-trading-loop-with-9000-real-candles-aof": "2026-11-21",
+    "dev.to/yenpodev/how-to-spot-when-an-ai-agent-weakened-or-deleted-your-tests-265a": "2026-11-21",
+    "dev.to/silviutech/playwright-email-tests-need-a-correlation-id-1kc5": "2026-11-21",
+    "dev.to/ksu9999/why-android-apps-behave-differently-on-x86-emulators-arm-translation-and-native-libraries-explained-1jbo": "2026-11-21",
+    "aiqualityengineer.cc/the-ai-testing-landscape-five-areas-not-five-maturity-levels-fde67105ae95": "2026-11-21",
+    "medium.com/@iremsuupalaa/modern-mobil-mimaride-d%C3%B6rt-kritik-e%C5%9Fik-on-device-ai-g%C3%B6r%C3%BCnmez-ux-%C3%B6l%C3%A7eklenebilirlik-ve-qa-bb29a2cbc15e": "2026-11-21",
+    "medium.com/@bob148666/no-need-to-build-another-platform-how-i-built-a-shared-regression-dashboard-with-claude-skills-and-fff9a60bd2a7": "2026-11-21",
+    "pub.towardsai.net/let-claude-use-your-app-every-night-instead-of-writing-more-e2e-flows-5d524caf5d3b": "2026-11-21"
   }
 }
