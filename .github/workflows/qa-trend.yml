@@ -2,8 +2,9 @@ name: QA Trend Tracker
 
 on:
   schedule:
-    # 매일 오전 10:00 KST 목표 (2h 딜레이 보정)
-    - cron: '0 23 * * *'
+    # 03:00 KST 예약 — GitHub 예약 실행이 3~6시간 늦게 돈다(11/15~22 실측 02:17~04:53Z 시작).
+    # 실제로는 06~09시 KST 쯤 돌아 11:00 적용 제안 실행보다 먼저 끝난다
+    - cron: '0 18 * * *'
   workflow_dispatch:
 
 permissions:
