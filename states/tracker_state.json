@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T12:38:39.731725+09:00",
+  "updated": "2026-11-22T11:45:13.176122+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3763,6 +3763,27 @@
     "aiqualityengineer.cc/the-ai-testing-landscape-five-areas-not-five-maturity-levels-fde67105ae95": "2026-11-21",
     "medium.com/@iremsuupalaa/modern-mobil-mimaride-d%C3%B6rt-kritik-e%C5%9Fik-on-device-ai-g%C3%B6r%C3%BCnmez-ux-%C3%B6l%C3%A7eklenebilirlik-ve-qa-bb29a2cbc15e": "2026-11-21",
     "medium.com/@bob148666/no-need-to-build-another-platform-how-i-built-a-shared-regression-dashboard-with-claude-skills-and-fff9a60bd2a7": "2026-11-21",
-    "pub.towardsai.net/let-claude-use-your-app-every-night-instead-of-writing-more-e2e-flows-5d524caf5d3b": "2026-11-21"
+    "pub.towardsai.net/let-claude-use-your-app-every-night-instead-of-writing-more-e2e-flows-5d524caf5d3b": "2026-11-21",
+    "aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick": "2026-11-22",
+    "dev.to/sazerfenor/your-agents-rules-file-is-code-so-test-it-three-checks-from-a-20-point-list-h3l": "2026-11-22",
+    "dev.to/jasonmills94/aws-ci-observe-email-fixtures-before-they-fail-3jab": "2026-11-22",
+    "dev.to/ezrazhao/thresholds-are-not-constants-calibration-drift-in-an-area-threshold-detector-measured-4k2k": "2026-11-22",
+    "dev.to/dafili/silent-failure-14-the-pre-fix-run-that-wasnt-37pn": "2026-11-22",
+    "dev.to/macro8n/from-sleep5000-to-a-real-ui-check-five-tests-for-desktop-automation-3ndi": "2026-11-22",
+    "dev.to/obsidianstudio/three-checks-to-run-yourself-before-accepting-a-crm-integration-10ia": "2026-11-22",
+    "dev.to/devstation026/sort-your-defects-before-you-buy-an-automated-inspection-system-5dgf": "2026-11-22",
+    "dev.to/edycutjong/fitting-a-model-checker-into-one-million-compiler-steps-2n6h": "2026-11-22",
+    "dev.to/ricar_prisco/validate-a-lighting-fixture-schedule-with-python-507b": "2026-11-22",
+    "dev.to/esfir_renviq/our-second-market-study-had-the-opposite-bug-a-browser-made-rental-sites-look-bookable-26dk": "2026-11-22",
+    "dev.to/jasonmills94/docker-ci-isolate-email-fixtures-by-build-5eeg": "2026-11-22",
+    "dev.to/aiwithanton/what-is-an-ai-qa-architect-role-system-and-skills-548h": "2026-11-22",
+    "dev.to/silviutech/playwright-email-tests-need-a-cleanup-contract-2n90": "2026-11-22",
+    "dev.to/samaythakkar/is-qa-dead-in-the-age-of-ai-coding-397o": "2026-11-22",
+    "dev.to/cloakmails/how-to-test-sign-up-and-password-reset-emails-without-polluting-your-inbox-45p6": "2026-11-22",
+    "niluka.medium.com/beyond-the-prompt-a-better-workflow-for-ai-assisted-qa-engineering-38de87297fe2": "2026-11-22",
+    "medium.com/@admin_25657/5-ways-ai-agents-are-changing-software-testing-84645ee1e46f": "2026-11-22",
+    "medium.com/@rudrasurti98/i-built-an-ai-test-case-generator-with-claude-for-playwright-selenium-and-appium-2328a26452d7": "2026-11-22",
+    "medium.com/@paQArti/regression-testing-benerin-satu-jangan-sampai-rusak-yang-lain-cba826c2d294": "2026-11-22",
+    "ntrongtin11702.medium.com/when-ai-tests-agree-with-the-bug-984c9f111a37": "2026-11-22"
   }
 }
