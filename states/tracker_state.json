@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T11:45:13.176122+09:00",
+  "updated": "2026-11-23T08:12:20.256519+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3784,6 +3784,21 @@
     "medium.com/@admin_25657/5-ways-ai-agents-are-changing-software-testing-84645ee1e46f": "2026-11-22",
     "medium.com/@rudrasurti98/i-built-an-ai-test-case-generator-with-claude-for-playwright-selenium-and-appium-2328a26452d7": "2026-11-22",
     "medium.com/@paQArti/regression-testing-benerin-satu-jangan-sampai-rusak-yang-lain-cba826c2d294": "2026-11-22",
-    "ntrongtin11702.medium.com/when-ai-tests-agree-with-the-bug-984c9f111a37": "2026-11-22"
+    "ntrongtin11702.medium.com/when-ai-tests-agree-with-the-bug-984c9f111a37": "2026-11-22",
+    "openai.com/index/perplexity-and-intelligence": "2026-11-23",
+    "dev.to/imacto/a-scroll-not-a-read-5g8h": "2026-11-23",
+    "dev.to/hcxshh/turning-a-chinese-open-ended-contract-rule-into-code-four-boundary-cases-4gfg": "2026-11-23",
+    "dev.to/libme/jest-vitest-or-nodetest-fixing-cannot-use-import-statement-outside-a-module-by-choosing-the-213g": "2026-11-23",
+    "dev.to/endureqr/i-decoded-free-qr-codes-from-20-generators-with-playwright-and-jsqr-heres-what-was-inside-41ch": "2026-11-23",
+    "dev.to/omegasoft7/a-five-document-test-for-citation-links-in-document-chat-4fpf": "2026-11-23",
+    "dev.to/checkcraft/bug-hunt-10-bugs-behind-200-ok-find-them-all-and-get-into-the-hall-of-fame-5bjd": "2026-11-23",
+    "dev.to/errtudev/i-built-tensgo-a-zero-dependency-go-cli-tui-for-cicd-api-load-testing-1b40": "2026-11-23",
+    "dev.to/aleksuix/openrtb-tmax-needs-a-deadline-budget-that-includes-network-time-b0p": "2026-11-23",
+    "dev.to/keyur_shah_f3f68b0d63db96/retro-formats-beyond-startstopcontinue-9b0": "2026-11-23",
+    "dev.to/wilddog64/uncle-bob-stopped-reading-his-agents-code-i-got-there-from-the-other-side-with-three-vendors-4pof": "2026-11-23",
+    "niluka.medium.com/cypress-ai-skills-making-your-ai-coding-assistant-better-at-test-automation-ef3f34aaeb78": "2026-11-23",
+    "medium.com/@preetinderblogger2026/ai-testing-playbook-how-to-test-systems-that-dont-give-the-same-answer-twice-8e49240fcf4c": "2026-11-23",
+    "medium.com/@tselva88/spec-driven-agentic-ui-automation-with-playwright-and-claude-code-ad0fa119bd0c": "2026-11-23",
+    "medium.com/@jonas.menesklou/test-orchestration-run-playwright-selenium-and-appium-suites-next-to-ai-agent-tests-without-c5b24a05bad5": "2026-11-23"
   }
 }
