@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T08:12:20.256519+09:00",
+  "updated": "2026-11-24T12:46:33.429630+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3799,6 +3799,31 @@
     "niluka.medium.com/cypress-ai-skills-making-your-ai-coding-assistant-better-at-test-automation-ef3f34aaeb78": "2026-11-23",
     "medium.com/@preetinderblogger2026/ai-testing-playbook-how-to-test-systems-that-dont-give-the-same-answer-twice-8e49240fcf4c": "2026-11-23",
     "medium.com/@tselva88/spec-driven-agentic-ui-automation-with-playwright-and-claude-code-ad0fa119bd0c": "2026-11-23",
-    "medium.com/@jonas.menesklou/test-orchestration-run-playwright-selenium-and-appium-suites-next-to-ai-agent-tests-without-c5b24a05bad5": "2026-11-23"
+    "medium.com/@jonas.menesklou/test-orchestration-run-playwright-selenium-and-appium-suites-next-to-ai-agent-tests-without-c5b24a05bad5": "2026-11-23",
+    "openai.com/index/introducing-shirudo": "2026-11-24",
+    "research.google/blog/supercharging-transformer-residual-connections": "2026-11-24",
+    "blog.cloudflare.com/probing-dns-at-cloudflare": "2026-11-24",
+    "openai.com/business/learn/connected-intelligence-for-in-house-legal": "2026-11-24",
+    "openai.com/business/customer-stories/richpanel-ai-customer-support": "2026-11-24",
+    "dev.to/veilvm/code-that-reads-its-own-names-or-source-text-needs-extra-testing-after-obfuscation-3fgh": "2026-11-24",
+    "dev.to/nghiepvuvietnam/chia-so-buoi-cho-ba-phan-thi-toefl-itp-va-kiem-thu-bang-unittest-5e9n": "2026-11-24",
+    "dev.to/sandeep_jainforyou/how-generative-ai-is-transforming-qa-in-2026-3k83": "2026-11-24",
+    "dev.to/revhive/i-planted-3-bugs-in-23-lines-the-reviewer-found-all-3-and-corrected-my-own-bug-report-1k3b": "2026-11-24",
+    "dev.to/succday/your-768px-breakpoint-is-wrong-on-foldables-what-the-cover-and-inner-screens-actually-report-5clh": "2026-11-24",
+    "dev.to/jeff_pdc/hoppscotch-socketio-testing-realtime-events-guide-4oc3": "2026-11-24",
+    "dev.to/abdul_ali_e8d50c489285c9a/your-sign-up-emails-are-probably-broken-in-one-of-these-8-ways-508e": "2026-11-24",
+    "dev.to/saarathi_academy/does-qa-require-coding-not-at-first-but-it-comes-by-week-5-5g81": "2026-11-24",
+    "dev.to/jamilxt/ladybird-alpha-how-to-test-your-website-in-a-brand-new-browser-engine-1hjm": "2026-11-24",
+    "dev.to/minoru-iwasaki/make-claude-code-prove-its-fix-turn-any-bug-report-into-a-failing-test-first-1pbf": "2026-11-24",
+    "dev.to/ovulab/20-ai-testers-20-phones-5-put-your-app-through-a-crowd-test-13dc": "2026-11-24",
+    "dev.to/sophiax99/oauth-email-verification-needs-a-correlation-key-336n": "2026-11-24",
+    "dev.to/testlancer/crowdtesting-service-or-in-house-qa-where-real-users-fit-and-what-ai-response-evaluation-jobs-2eme": "2026-11-24",
+    "dev.to/checkcraft/ai-writes-your-api-tests-in-minutes-here-is-how-to-tell-if-they-test-anything-l5o": "2026-11-24",
+    "dev.to/nikolay_chernev_a67479931/how-to-detect-eval-set-contamination-data-leakage-in-your-llm-tests-10p": "2026-11-24",
+    "medium.com/@marinacruzjordao/what-qa-can-steal-from-pilots-surgeons-and-factory-floors-especially-in-the-ai-era-03676f0fc725": "2026-11-24",
+    "medium.com/@putraadityapradana/building-niscala-a-personal-ai-agent-for-a-qa-engineer-d74dcdab2325": "2026-11-24",
+    "medium.com/qualitynexus/the-evolution-of-quality-engineering-in-the-ai-era-from-finding-bugs-to-enabling-teams-5f62a998bd9f": "2026-11-24",
+    "thejenildgohel.medium.com/ai-mobile-app-testing-20-claude-code-agents-on-20-phones-for-0-read-the-catches-e154e631e5f0": "2026-11-24",
+    "medium.com/@olgaysezgin/stop-pasting-passwords-into-your-ai-coding-agent-a741bc29df2e": "2026-11-24"
   }
 }
