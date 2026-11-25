@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T12:46:33.429630+09:00",
+  "updated": "2026-11-25T10:54:15.597060+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3824,6 +3824,31 @@
     "medium.com/@putraadityapradana/building-niscala-a-personal-ai-agent-for-a-qa-engineer-d74dcdab2325": "2026-11-24",
     "medium.com/qualitynexus/the-evolution-of-quality-engineering-in-the-ai-era-from-finding-bugs-to-enabling-teams-5f62a998bd9f": "2026-11-24",
     "thejenildgohel.medium.com/ai-mobile-app-testing-20-claude-code-agents-on-20-phones-for-0-read-the-catches-e154e631e5f0": "2026-11-24",
-    "medium.com/@olgaysezgin/stop-pasting-passwords-into-your-ai-coding-agent-a741bc29df2e": "2026-11-24"
+    "medium.com/@olgaysezgin/stop-pasting-passwords-into-your-ai-coding-agent-a741bc29df2e": "2026-11-24",
+    "openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities": "2026-11-25",
+    "medium.com/expedia-group-tech/diversifying-property-galleries-with-visual-embeddings-and-maximal-marginal-relevance-30496035dac0": "2026-11-25",
+    "openai.com/index/searching-for-distant-planets-with-astra": "2026-11-25",
+    "aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls": "2026-11-25",
+    "openai.com/business/customer-stories/intentful-dots": "2026-11-25",
+    "dev.to/ankur_shrestha_c97f7c0b9c/treat-the-screen-picker-as-its-own-step-bcp": "2026-11-25",
+    "dev.to/gaotman/smartele-iptv-canada-plans-devices-and-a-streaming-compatibility-checklist-36fk": "2026-11-25",
+    "dev.to/playconsolestore1/google-play-conversion-analysis-turning-store-visits-into-installs-5fam": "2026-11-25",
+    "dev.to/jeff_pdc/insomnia-cloud-sync-vs-git-files-where-your-api-work-should-live-278b": "2026-11-25",
+    "dev.to/ai_superapp/the-agent-said-done-how-do-you-check-6md": "2026-11-25",
+    "dev.to/ai_superapp/testing-a-mini-app-across-a-shift-change-on-a-shared-tablet-50ng": "2026-11-25",
+    "dev.to/kaptra/how-to-read-image-text-in-python-for-automated-testing-38g1": "2026-11-25",
+    "dev.to/onaynet/how-to-automate-non-voip-sms-otp-verification-in-nodejs-python-playwright-hlr-lookup-10dlc-40oi": "2026-11-25",
+    "dev.to/keith_azodeh/cloudflares-free-email-demo-wont-test-your-daily-sending-limit-4obn": "2026-11-25",
+    "dev.to/voorai/how-to-convert-webm-to-mp4-with-ffmpeg-stream-copy-can-mux-vp9-and-opus-into-an-mp4-file-without-39f3": "2026-11-25",
+    "dev.to/tappers_/deduplicating-cascading-test-failures-for-coding-agents-raw-error-dumps-vs-ast-root-cause-error-3940": "2026-11-25",
+    "dev.to/silviutech/make-playwright-email-failures-explainable-2a2h": "2026-11-25",
+    "dev.to/wuweiweiwu/web-application-testing-with-ai-a-step-by-step-guide-4h4i": "2026-11-25",
+    "dev.to/testsy/five-ai-testers-one-planted-bug-what-each-verdict-rested-on-596e": "2026-11-25",
+    "medium.com/@nixon_augustin/i-went-to-report-a-broken-insurance-flow-the-complaint-website-was-down-too-6cecf6d008d9": "2026-11-25",
+    "marcinhanotamil.medium.com/quais-elementos-sustentam-a-confian%C3%A7a-nas-suas-an%C3%A1lises-5e528ada8dba": "2026-11-25",
+    "medium.com/sahibinden-technology/ai-test-case-yaz%C4%B1yor-qa-ne-yap%C4%B1yor-3190e9c74c63": "2026-11-25",
+    "medium.com/@avatarwu/the-manual-said-off-the-machine-said-on-161e8ea0e28a": "2026-11-25",
+    "medium.com/@acirit1/ai-destekli-bdd-tabanl%C4%B1-playwright-test-otomasyon-%C5%9Fablonu-ca5c1c8d85d3": "2026-11-25",
+    "medium.com/@arunkumarnehruks/from-a-single-prompt-to-three-ai-skills-how-i-structured-my-api-test-automation-workflow-aa4e7c225087": "2026-11-25"
   }
 }
