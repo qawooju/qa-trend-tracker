@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T10:54:15.597060+09:00",
+  "updated": "2026-11-26T10:30:48.780710+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3849,6 +3849,28 @@
     "medium.com/sahibinden-technology/ai-test-case-yaz%C4%B1yor-qa-ne-yap%C4%B1yor-3190e9c74c63": "2026-11-25",
     "medium.com/@avatarwu/the-manual-said-off-the-machine-said-on-161e8ea0e28a": "2026-11-25",
     "medium.com/@acirit1/ai-destekli-bdd-tabanl%C4%B1-playwright-test-otomasyon-%C5%9Fablonu-ca5c1c8d85d3": "2026-11-25",
-    "medium.com/@arunkumarnehruks/from-a-single-prompt-to-three-ai-skills-how-i-structured-my-api-test-automation-workflow-aa4e7c225087": "2026-11-25"
+    "medium.com/@arunkumarnehruks/from-a-single-prompt-to-three-ai-skills-how-i-structured-my-api-test-automation-workflow-aa4e7c225087": "2026-11-25",
+    "research.google/blog/verifiable-social-reasoning-for-llm-assistants": "2026-11-26",
+    "blog.cloudflare.com/search-for-agents": "2026-11-26",
+    "dev.to/aliuzhongzheng/nobody-can-tell-you-whether-the-language-layer-of-an-old-laravel-project-breaks-so-i-built-a-cli-i4": "2026-11-26",
+    "dev.to/playconsolestore1/google-play-user-acquisition-reports-understanding-install-sources-5fak": "2026-11-26",
+    "dev.to/karisjunianto/my-ai-agent-built-a-help-desk-app-then-a-second-tool-checked-its-work-in-a-real-browser-4op": "2026-11-26",
+    "dev.to/ai_superapp/testing-cross-mini-app-handoffs-when-the-destination-changes-4phd": "2026-11-26",
+    "dev.to/davequinta/my-prompt-couldnt-add-and-my-eval-didnt-say-why-2jg8": "2026-11-26",
+    "dev.to/jackm-singularity/pdf-ocr-regression-tests-for-rag-catch-missing-text-on-mixed-pages-bmc": "2026-11-26",
+    "dev.to/davequinta/i-dont-just-review-the-agents-code-anymore-i-ask-for-proof-38hl": "2026-11-26",
+    "dev.to/sophie_bella_5f438de0c1c3/put-the-verification-inbox-in-the-test-contract-4am7": "2026-11-26",
+    "dev.to/1clickdirectorybuilder/testing-a-static-directory-build-with-lighthouse-ci-4iid": "2026-11-26",
+    "dev.to/joanbernierpixels/how-to-export-a-qr-code-payload-as-json-in-the-browser-without-uploading-the-screenshot-59j8": "2026-11-26",
+    "dev.to/hexisteme/i-mined-515-of-my-own-commits-for-llm-eval-tasks-59-reproduced-and-25-got-in-2o5d": "2026-11-26",
+    "dev.to/sharmaajay19/green-ci-wrong-code-7-ways-ai-agent-prs-fool-reviewers-and-the-2-docs-that-fix-it-13k2": "2026-11-26",
+    "dev.to/wuweiweiwu/testing-ai-generated-code-a-guide-for-engineering-teams-1k3b": "2026-11-26",
+    "dev.to/shinoj_cm_6b559b3ab51bf47/building-self-healing-ui-tests-from-state-machine-specs-494p": "2026-11-26",
+    "dev.to/silviutech/a-failure-taxonomy-for-playwright-email-tests-b9g": "2026-11-26",
+    "medium.com/@guler.gok/ai-test-yazd%C4%B1-peki-ger%C3%A7ekten-neyi-test-etti-f99a288a6808": "2026-11-26",
+    "medium.com/@ramellabasenko/the-best-process-you-are-looking-for-may-already-exist-in-your-own-company-and-how-ai-can-speed-up-57b118140361": "2026-11-26",
+    "medium.com/@ArpitChoubey9/the-wait-that-never-ended-why-networkidle-is-quietly-breaking-your-playwright-tests-e8b12a80c6e1": "2026-11-26",
+    "medium.com/@aeshamangukiya1/uat-testing-explained-user-acceptance-testing-process-real-examples-c0638fb2a1c3": "2026-11-26",
+    "medium.com/@acirit1/ai-assisted-bdd-based-playwright-test-automation-template-2e68529de7cb": "2026-11-26"
   }
 }
