@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T10:30:48.780710+09:00",
+  "updated": "2026-11-27T10:28:06.186280+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3871,6 +3871,23 @@
     "medium.com/@ramellabasenko/the-best-process-you-are-looking-for-may-already-exist-in-your-own-company-and-how-ai-can-speed-up-57b118140361": "2026-11-26",
     "medium.com/@ArpitChoubey9/the-wait-that-never-ended-why-networkidle-is-quietly-breaking-your-playwright-tests-e8b12a80c6e1": "2026-11-26",
     "medium.com/@aeshamangukiya1/uat-testing-explained-user-acceptance-testing-process-real-examples-c0638fb2a1c3": "2026-11-26",
-    "medium.com/@acirit1/ai-assisted-bdd-based-playwright-test-automation-template-2e68529de7cb": "2026-11-26"
+    "medium.com/@acirit1/ai-assisted-bdd-based-playwright-test-automation-template-2e68529de7cb": "2026-11-26",
+    "dev.to/ai_superapp/one-mini-app-two-backends-what-does-the-host-actually-depend-on-59gg": "2026-11-27",
+    "dev.to/edycutjong/our-schema-diff-saw-2-changes-replaying-the-agents-real-calls-found-5-that-came-back-different-2jlh": "2026-11-27",
+    "dev.to/varun_c86dab6f2e1803527ce/i-built-a-smart-api-client-that-indexes-your-code-pre-fills-payloads-chains-tests-load-tests-and-nai": "2026-11-27",
+    "dev.to/tappers_/why-hand-written-example-tests-fail-ai-coding-agents-fixed-sample-tests-vs-a-property-based-1mia": "2026-11-27",
+    "dev.to/maktlf1439/beemind-ai-building-an-iot-prototype-for-smarter-beehive-monitoring-in-saudi-arabia-4b3h": "2026-11-27",
+    "dev.to/quirkytranslators/i-tested-a-gibberish-translator-does-the-idig-trick-actually-work-4ace": "2026-11-27",
+    "dev.to/hexisteme/a-local-moe-model-on-an-8-gb-gpu-researched-for-an-hour-and-never-wrote-the-report-1poi": "2026-11-27",
+    "dev.to/avilano/7-stateless-subagents-audited-our-ai-spec-before-we-wrote-code-31hj": "2026-11-27",
+    "dev.to/sophiax99/oauth-test-inboxes-need-nonces-not-hope-48o8": "2026-11-27",
+    "dev.to/ericgitangu/one-letter-months-of-silence-a-typo-in-a-field-projection-that-stopped-a-partner-callback-2967": "2026-11-27",
+    "dev.to/_er2es_/review-driven-development-meets-claude-ship-running-an-invariant-loop-on-automated-pr-agents-324b": "2026-11-27",
+    "dev.to/samyak_jain_dc6c4b9b19799/i-checked-an-ai-built-login-feature-against-its-own-prd-here-is-what-it-missed-2856": "2026-11-27",
+    "medium.com/@recep.zengin908/automated-game-testing-with-reinforcement-learning-the-ai-that-plays-your-game-better-than-you-c1ff5e4f1a29": "2026-11-27",
+    "medium.com/@m4midhat/the-double-edged-bot-what-ai-really-does-to-qa-automation-9b67583bb5b7": "2026-11-27",
+    "medium.com/@mayvinr/is-maestro-cloud-worth-it-what-a-month-of-daily-runs-taught-me-bb05ffdacdd3": "2026-11-27",
+    "medium.com/@instigator21/i-wanted-claude-to-test-its-own-code-four-months-later-i-had-a-windows-gui-testing-framework-af26e3ab05e0": "2026-11-27",
+    "bismabhundi.medium.com/ai-powered-defect-prediction-identifying-high-risk-areas-before-they-fail-1410b640aab0": "2026-11-27"
   }
 }
