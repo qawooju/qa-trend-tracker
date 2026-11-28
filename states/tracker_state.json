@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T10:28:06.186280+09:00",
+  "updated": "2026-11-28T10:03:26.158859+09:00",
   "sent": {
     "dev.to/jamescantor38/ai-testing-explained-a-2025-guide-for-modern-qa-teams-2hjp": "2026-03-07",
     "techblog.lycorp.co.jp/ko/safety-and-cost-saving-why-separate-guardrails-are-necessary": "2026-03-07",
@@ -3888,6 +3888,23 @@
     "medium.com/@m4midhat/the-double-edged-bot-what-ai-really-does-to-qa-automation-9b67583bb5b7": "2026-11-27",
     "medium.com/@mayvinr/is-maestro-cloud-worth-it-what-a-month-of-daily-runs-taught-me-bb05ffdacdd3": "2026-11-27",
     "medium.com/@instigator21/i-wanted-claude-to-test-its-own-code-four-months-later-i-had-a-windows-gui-testing-framework-af26e3ab05e0": "2026-11-27",
-    "bismabhundi.medium.com/ai-powered-defect-prediction-identifying-high-risk-areas-before-they-fail-1410b640aab0": "2026-11-27"
+    "bismabhundi.medium.com/ai-powered-defect-prediction-identifying-high-risk-areas-before-they-fail-1410b640aab0": "2026-11-27",
+    "engineering.atspotify.com/2026/11/september-29-outage-incident-report-what-we-learnt": "2026-11-28",
+    "dev.to/member_0fbab672/japans-hotel-taxes-are-now-different-in-every-city-encoding-the-2026aeu27-rules-in-plain-js-3789": "2026-11-28",
+    "dev.to/mech_app_ai/zero-repeat-regressions-how-a-375-ticket-empirical-ledger-exposes-the-missing-eval-layer-in-agent-2iig": "2026-11-28",
+    "dev.to/hexisteme/i-applied-an-18-item-finishing-checklist-to-one-shot-my-blind-ab-test-picked-the-original-3jjn": "2026-11-28",
+    "dev.to/nikolay_lu46iy_43f2db24af/how-to-test-shopify-pixels-before-touching-the-cookie-banner-1g6d": "2026-11-28",
+    "dev.to/nikolay_lu46iy_43f2db24af/shopify-meta-pixel-not-detected-check-the-frame-before-reinstalling-it-37lm": "2026-11-28",
+    "dev.to/charlotte_nelson_9aadde70/why-does-my-projected-goal-date-keep-changing-build-a-goal-weight-forecast-in-javascript-that-4acj": "2026-11-28",
+    "dev.to/jackm-singularity/how-to-test-whisper-hallucinations-on-silence-without-losing-quiet-speech-4g54": "2026-11-28",
+    "dev.to/clara_sutton/how-we-unit-test-40-residential-floor-plans-for-watertight-geometry-ansi-z765-gla-and-autocad-dxf-2abi": "2026-11-28",
+    "dev.to/oliviachen7/fastapi-backoff-con-contexto-para-emails-de-prueba-2eke": "2026-11-28",
+    "dev.to/unverco/test-iphone-safari-on-github-actions-without-a-mac-a-working-workflow-and-the-limits-3gbf": "2026-11-28",
+    "dev.to/valenx/how-would-you-evaluate-an-llm-feature-the-eval-question-in-ai-engineer-interviews-44gf": "2026-11-28",
+    "dev.to/valenx/temperature-0-is-not-a-determinism-switch-answering-sampling-questions-in-ai-engineer-interviews-9gm": "2026-11-28",
+    "dev.to/rammehta1899/ai-code-bottleneck-autonomous-testing-in-cicd-40n6": "2026-11-28",
+    "dev.to/testdevlab/ai-testing-and-llm-evaluation-a-practical-guide-for-production-teams-7nd": "2026-11-28",
+    "medium.com/@socailmedia131091/mcp-for-qa-why-your-ai-test-agent-needs-tools-not-pasted-logs-5bbde743ece7": "2026-11-28",
+    "medium.com/@shoeb.surya/i-gave-my-app-six-ai-testers-here-is-how-i-build-them-f8e802dd4708": "2026-11-28"
   }
 }
